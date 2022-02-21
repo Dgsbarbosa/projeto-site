@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background:url(../imagens/predio3.png), rgba(0, 0, 255, 0.281);
+    background-repeat: no-repeat;
+    background-size:100% 550px;
+    background-position: bottom;
+    margin-top: 0;
+    background-color: rgba(224, 224, 224, 0.74);
+}
+
+
+footer{
+    position: static;
+    margin-bottom: 0%;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 15px;
+
+}
+
+.logo {
+    width: 200px;
+    float: left;
+    display: block;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 0px;
+    
+    
+}
+.whats{
+    width: 100px;
+    position: fixed;
+    left: 1200px;
+    top: 100px;
+    
+}
+
+.facilities{
+    width:600px;
+    margin-left: 400px;
+    margin-top: 20px;
+       
+}
+p{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    color: rgb(70, 70, 255);
+    margin-left: 30px;
+}
+
+.menu {
+    width: max-content;
+    height: 50px;
+    margin-left: 400px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    width: 180px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.menu a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    box-sizing: border-box;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu a:hover {
+    background-color: black;
+    color: yellow;
+}
+
+label[for="bt_menu"] {
+    padding: 5px;
+    background-color: blue;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: white;
+
+}
+
+#bt_menu {
+    display: none;
+}
+
+label[for="bt_menu"] {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    label[for="bt_menu"] {
+        display: block;
+        float: left;
+        margin-bottom: 5px;
+    }
+
+    .facilities {
+        width: 100%;
+        margin-top: 10px;
+        float: none;
+        margin-left: 40px;
+        
+    }
+    .fundo{
+        margin-left: 30px;
+    }
+    .logo{
+        display: none;
+    }
+
+    #bt_menu:checked~.menu {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .menu {
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+   
+    .menu ul li {
+        width: 100%;
+        float: right;
+        
+    }
+    .whats{
+        width: 100px;
+        position: fixed;
+        left: 0px;
+        top: 100px;
+    }
+}
