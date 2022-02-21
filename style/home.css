@@ -154,7 +154,7 @@ label[for="bt_menu"] {
     .menu {
         margin-left: 5px;
         margin-top: 5px;
-        margin-left: -100%;
+        margin-left: -150%;
         transition: all .4s;
     }
    
@@ -166,7 +166,7 @@ label[for="bt_menu"] {
     .whats{
         width: 100px;
         position: fixed;
-        left: 0px;
+        left: 450px;
         top: 100px;
     }
 }
